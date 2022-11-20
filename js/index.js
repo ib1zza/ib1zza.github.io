@@ -81,3 +81,20 @@ const hideF = () =>
     translateX: -250,
     easing: "linear",
   });
+
+const burgerTogglerLink = document.querySelector(".header__burger__button");
+const burgerEl = document.querySelector(".header__burger");
+const burgerBg = document.querySelector(".header__burger__overlay");
+
+const toggleBurgerMenu = () => {
+  if (burgerEl.classList.contains("header__burger_active")) {
+    burgerEl.classList.add("header__burger");
+    burgerEl.classList.remove("header__burger_active");
+  } else {
+    burgerEl.classList.add("header__burger_active");
+    burgerEl.classList.remove("header__burger");
+  }
+};
+
+burgerBg.addEventListener("click", toggleBurgerMenu);
+burgerTogglerLink.addEventListener("click", toggleBurgerMenu);
