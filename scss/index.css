@@ -604,9 +604,12 @@ footer {
 .footer__media > h2 {
   font-size: 24px;
 }
-.footer__media > .footer__media__links > a {
-  height: 20px;
-  font-size: 20px;
+.footer__media__links > a {
+  font-size: 30px;
+  color: #C778DD;
+}
+.footer__media__links > a:hover {
+  color: #c881f7;
 }
 .footer > span {
   font-size: 16px;
@@ -615,4 +618,24 @@ footer {
   width: 100%;
   grid-area: copyright;
   text-align: center;
+}
+@media screen and (max-width: 450px) {
+  .footer {
+    grid-template-areas: "logo logo" "media media" "copyright copyright";
+  }
+  .footer__media {
+    margin-top: 20px;
+  }
+  .footer__media > h2 {
+    display: none;
+    font-size: 24px;
+  }
+  .footer__media__links {
+    display: flex;
+  }
+  .footer__media__links > a {
+    text-align: center;
+    font-size: 50px;
+    width: 25%;
+  }
 }/*# sourceMappingURL=index.css.map */
