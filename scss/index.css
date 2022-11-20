@@ -105,6 +105,45 @@ select {
   max-width: 95%;
   margin: 0 auto;
 }
+._container__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+@media screen and (max-width: 512px) {
+  ._container__header {
+    flex-wrap: wrap;
+  }
+}
+._container__header > h1 {
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 32px;
+  position: relative;
+  margin-right: 15px;
+}
+._container__header > h1::before {
+  content: "#";
+  font-weight: 500;
+  color: #C778DD;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+._container__header__line {
+  min-width: 40px;
+  flex-grow: 1;
+  height: 1px;
+  background: #C778DD;
+}
+._container__header__more a {
+  color: #FFFFFF;
+  margin-left: 10%;
+  white-space: nowrap;
+}
+._container__header__more a span {
+  display: inline-block;
+}
 
 body {
   background-color: #1E1E1E;
@@ -366,45 +405,6 @@ h6 {
   color: #FFFFFF;
 }
 
-.projectsBlock__header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 48px;
-}
-@media screen and (max-width: 512px) {
-  .projectsBlock__header {
-    flex-wrap: wrap;
-  }
-}
-.projectsBlock__header > h1 {
-  padding-left: 20px;
-  font-weight: 500;
-  font-size: 32px;
-  position: relative;
-  margin-right: 15px;
-}
-.projectsBlock__header > h1::before {
-  content: "#";
-  font-weight: 500;
-  color: #C778DD;
-  position: absolute;
-  top: 0;
-  left: 0px;
-}
-.projectsBlock__header__line {
-  min-width: 40px;
-  flex-grow: 1;
-  height: 1px;
-  background: #C778DD;
-}
-.projectsBlock__header__more a {
-  color: #FFFFFF;
-  margin-left: 10%;
-  white-space: nowrap;
-}
-.projectsBlock__header__more a span {
-  display: inline-block;
-}
 .projectsBlock__projects {
   display: flex;
   justify-content: space-between;
@@ -536,7 +536,7 @@ h6 {
   margin-top: 70px;
 }
 .aboutBlock__text {
-  width: 40%;
+  width: 100%;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -552,6 +552,9 @@ h6 {
   transform: scale(1.5);
 }
 
+.contactsBlock {
+  margin-top: 70px;
+}
 .contactsBlock__text {
   display: flex;
   justify-content: space-between;
@@ -565,6 +568,15 @@ h6 {
   flex-direction: column;
   padding: 16px;
   justify-content: space-between;
+}
+@media screen and (max-width: 620px) {
+  .contactsBlock__text {
+    flex-direction: column;
+  }
+  .contactsBlock__text p {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 footer {

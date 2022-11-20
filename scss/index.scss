@@ -7,7 +7,52 @@
     width: 1024px;
     max-width: 95%;
     margin: 0 auto;
+
+    &__header {
+
+        @media screen and (max-width: 512px){
+            flex-wrap: wrap;
+        }
+
+        display: flex;
+        align-items: center;
+        margin-bottom: 48px;
+        &>h1 {
+            padding-left: 20px;
+            font-weight: 500;
+            font-size: 32px;
+            position: relative;
+            margin-right: 15px;
+            &::before {
+                content: "#";
+                font-weight: 500;
+                color: $accentColor;
+                position: absolute;
+                top: 0;
+                left: 0px;
+            }
+        }
+        &__line {
+            min-width: 40px;
+            flex-grow: 1;
+            height: 1px;
+            background: $accentColor;
+        }
+        &__more {
+            a {
+                color: #FFFFFF;
+                margin-left: 10%;
+                white-space: nowrap;
+                span {
+                    display: inline-block;
+                }
+            }
+        }
+
+    }
 }
+
+
 
 body {
     background-color: $bgColor;
@@ -305,48 +350,6 @@ h6
 }
 
 .projectsBlock {
-    &__header {
-
-        @media screen and (max-width: 512px){
-            flex-wrap: wrap;
-        }
-
-        display: flex;
-        align-items: center;
-        margin-bottom: 48px;
-        &>h1 {
-            padding-left: 20px;
-            font-weight: 500;
-            font-size: 32px;
-            position: relative;
-            margin-right: 15px;
-            &::before {
-                content: "#";
-                font-weight: 500;
-                color: $accentColor;
-                position: absolute;
-                top: 0;
-                left: 0px;
-            }
-        }
-        &__line {
-            min-width: 40px;
-            flex-grow: 1;
-            height: 1px;
-            background: $accentColor;
-        }
-        &__more {
-            a {
-                color: #FFFFFF;
-                margin-left: 10%;
-                white-space: nowrap;
-                span {
-                    display: inline-block;
-                }
-            }
-        }
-
-    }
     &__projects {
         
         display: flex;
@@ -490,7 +493,7 @@ h6
 .aboutBlock {
     margin-top: 70px;
     &__text {
-        width: 40%;
+        width: 100%;
         font-weight: 400;
         font-size: 16px;
         line-height: 21px;
@@ -510,9 +513,13 @@ h6
 }
 
 .contactsBlock {
+    margin-top: 70px;
+
+    
     &__text {
         display: flex;
         justify-content: space-between;
+        
 
         p {
             width: 50%;
@@ -524,6 +531,14 @@ h6
             flex-direction: column;
             padding: 16px;
             justify-content: space-between;
+        }
+        @media screen and (max-width: 620px) {
+            flex-direction: column;
+
+            p {
+                width: 100%;
+                margin-bottom: 30px;
+            }
         }
     }
 }
