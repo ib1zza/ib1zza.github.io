@@ -2,12 +2,16 @@ import anime from "./anime.js";
 
 function ibg() {
   let ibg = document.querySelectorAll(".ibg");
-  for (var i = 0; i < ibg.length; i++) {
+  for (let i = 0; i < ibg.length; i++) {
     if (ibg[i].querySelector("img")) {
       ibg[i].style.backgroundImage =
         "url(" + ibg[i].querySelector("img").getAttribute("src") + ")";
+      console.log(
+        "url(" + ibg[i].querySelector("img").getAttribute("src") + ")"
+      );
     }
   }
+  console.log("ibg");
 }
 
 ibg();
@@ -98,3 +102,18 @@ const toggleBurgerMenu = () => {
 
 burgerBg.addEventListener("click", toggleBurgerMenu);
 burgerTogglerLink.addEventListener("click", toggleBurgerMenu);
+
+const arrowTextEl = document.querySelector(".arrow");
+const arrowEl = arrowTextEl.childNodes[1];
+console.log(arrowEl);
+
+const arrowAnime = (x) => {
+  anime({
+    targets: arrowEl,
+    translateX: x,
+  });
+  console.log("animetion");
+};
+
+arrowTextEl.addEventListener("mouseenter", () => arrowAnime(10));
+arrowTextEl.addEventListener("mouseleave", () => arrowAnime(0));

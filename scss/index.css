@@ -83,6 +83,7 @@ select {
   }
 }
 .ibg {
+  height: 200px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -370,6 +371,11 @@ h6 {
   align-items: center;
   margin-bottom: 48px;
 }
+@media screen and (max-width: 512px) {
+  .projectsBlock__header {
+    flex-wrap: wrap;
+  }
+}
 .projectsBlock__header > h1 {
   padding-left: 20px;
   font-weight: 500;
@@ -386,18 +392,28 @@ h6 {
   left: 0px;
 }
 .projectsBlock__header__line {
+  min-width: 40px;
   flex-grow: 1;
   height: 1px;
   background: #C778DD;
 }
-.projectsBlock__header__more {
+.projectsBlock__header__more a {
   color: #FFFFFF;
   margin-left: 10%;
+  white-space: nowrap;
+}
+.projectsBlock__header__more a span {
+  display: inline-block;
 }
 .projectsBlock__projects {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+}
+@media screen and (max-width: 860px) {
+  .projectsBlock__projects {
+    flex-direction: column;
+  }
 }
 .projectsBlock__projects__item {
   display: flex;
@@ -405,17 +421,52 @@ h6 {
   border: 1px solid #ABB2BF;
   width: 30%;
 }
-.projectsBlock__projects__item > .demo {
-  height: 200px;
+@media screen and (max-width: 860px) {
+  .projectsBlock__projects__item {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .projectsBlock__projects__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .projectsBlock__projects__item .project__item__text {
+    flex-grow: 1;
+    width: 50%;
+  }
+  .projectsBlock__projects__item .projects__image {
+    min-width: 200px;
+    width: 50%;
+    height: 330px;
+  }
 }
-.projectsBlock__projects__item > .technologies {
+@media screen and (max-width: 512px) {
+  .projectsBlock__projects__item {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .projectsBlock__projects__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .projectsBlock__projects__item .project__item__text {
+    width: 100%;
+  }
+  .projectsBlock__projects__item .projects__image {
+    min-width: 200px;
+    width: 100%;
+    height: 330px;
+  }
+}
+.projectsBlock__projects__item .technologies {
+  width: 100%;
   padding: 8px;
   border: solid #ABB2BF;
-  border-width: 1px 0;
+  border-width: 0 0 1px 0;
   font-weight: 400;
   font-size: 16px;
 }
-.projectsBlock__projects__item > .project__info {
+.projectsBlock__projects__item .project__info {
   width: 100%;
   padding: 16px 10px;
   display: flex;
@@ -424,8 +475,12 @@ h6 {
   justify-content: start;
   flex-grow: 1;
 }
-.projectsBlock__projects__item > .project__info > *:not(:last-child) {
+.projectsBlock__projects__item .project__info > *:not(:last-child) {
   margin-bottom: 16px;
+}
+.projectsBlock__projects__item .projects__image {
+  min-height: 260px;
+  background-image: url("../img/projects-screens/todo1.jpg");
 }
 
 .skillsBlock {
