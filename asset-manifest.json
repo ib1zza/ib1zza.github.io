@@ -1,10 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.d5fc053c.css",
-    "main.js": "/static/js/main.c06681f8.js",
+    "main.js": "/static/js/main.f97c59a0.js",
     "static/media/kanbanMockup.png": "/static/media/kanbanMockup.a817eeb3813d2719eb25.png",
     "static/media/ru.png": "/static/media/ru.740b12239cbb5688f1af.png",
     "static/media/en.png": "/static/media/en.e822d537421866972489.png",
+    "static/media/stellarImageDesktop1.png": "/static/media/stellarImageDesktop1.710df5cd32496fbfdb1e.png",
+    "static/media/stellarImageDesktop3.png": "/static/media/stellarImageDesktop3.a992e9308c2c3f968c05.png",
     "static/media/kanban3.png": "/static/media/kanban3.b08e40111e7e6621815e.png",
     "static/media/movie1.png": "/static/media/movie1.980849e4a5e4218a6e8f.png",
     "static/media/kanban1.png": "/static/media/kanban1.eb04e418b4b628115007.png",
@@ -14,8 +16,14 @@
     "static/media/kanban2.png": "/static/media/kanban2.0a8440f3c03f0b2e26af.png",
     "static/media/pizzaMockup.png": "/static/media/pizzaMockup.c1878be60f59cd19d112.png",
     "static/media/weatherMockup.png": "/static/media/weatherMockup.e8b75bad864c96ee82cb.png",
+    "static/media/webLarekImageDesktop1.png": "/static/media/webLarekImageDesktop1.5fd60c7777dfbd6e990d.png",
+    "static/media/webLarekImageDesktop4.png": "/static/media/webLarekImageDesktop4.5f6a10a9e3f20c886ef9.png",
+    "static/media/stellarImageDesktop4.png": "/static/media/stellarImageDesktop4.fcdf15cbbe8bc3510bef.png",
+    "static/media/stellarImageDesktop2.png": "/static/media/stellarImageDesktop2.2faebc99be83a6e4f25a.png",
     "static/media/todoMockup.png": "/static/media/todoMockup.c0d805fde0f96b6798cc.png",
+    "static/media/webLarekImageDesktop2.png": "/static/media/webLarekImageDesktop2.c5c76eac3567438f7a4f.png",
     "static/media/pizza2.png": "/static/media/pizza2.e77f46b50ecb7a501485.png",
+    "static/media/webLarekImageDesktop3.png": "/static/media/webLarekImageDesktop3.2ed6e714afd7349125dd.png",
     "static/media/chat1.png": "/static/media/chat1.db081e85a9b90681410d.png",
     "static/media/pizza1.png": "/static/media/pizza1.0ce100eabe37f36f96ab.png",
     "static/media/weather4.png": "/static/media/weather4.16597b3dc5b176a64864.png",
@@ -32,10 +40,10 @@
     "static/media/next.svg": "/static/media/next.71f35bce819d6c8a7e6b.svg",
     "static/media/prev.svg": "/static/media/prev.10916d88905c508623c7.svg",
     "main.d5fc053c.css.map": "/static/css/main.d5fc053c.css.map",
-    "main.c06681f8.js.map": "/static/js/main.c06681f8.js.map"
+    "main.f97c59a0.js.map": "/static/js/main.f97c59a0.js.map"
   },
   "entrypoints": [
     "static/css/main.d5fc053c.css",
-    "static/js/main.c06681f8.js"
+    "static/js/main.f97c59a0.js"
   ]
 }
