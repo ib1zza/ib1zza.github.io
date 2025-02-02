@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.b020b790.css",
-    "main.js": "/static/js/main.72bdff85.js",
+    "main.css": "/static/css/main.1b528dfc.css",
+    "main.js": "/static/js/main.627aa12d.js",
     "static/media/kanbanMockup.png": "/static/media/kanbanMockup.a817eeb3813d2719eb25.png",
     "static/media/ru.png": "/static/media/ru.740b12239cbb5688f1af.png",
+    "static/media/Roboto-Black.ttf": "/static/media/Roboto-Black.79315f160c4c680ec9ec.ttf",
     "static/media/en.png": "/static/media/en.e822d537421866972489.png",
     "static/media/stellarImageDesktop1.png": "/static/media/stellarImageDesktop1.710df5cd32496fbfdb1e.png",
     "static/media/stellarImageDesktop3.png": "/static/media/stellarImageDesktop3.a992e9308c2c3f968c05.png",
@@ -13,6 +14,15 @@
     "static/media/movieMockup.png": "/static/media/movieMockup.2d84e477a59ed68d98b8.png",
     "static/media/chatMockup.png": "/static/media/chatMockup.73b6239d0ba2280c73af.png",
     "static/media/movie2.png": "/static/media/movie2.92e5bdaff8a03af59c3f.png",
+    "static/media/PPNeueMachina-InktrapUltrabold.otf": "/static/media/PPNeueMachina-InktrapUltrabold.fb684ef5ee9ec89f251b.otf",
+    "static/media/PPNeueMachina-PlainUltraboldItalic.otf": "/static/media/PPNeueMachina-PlainUltraboldItalic.9c45816d0a456da1922e.otf",
+    "static/media/PPNeueMachina-PlainUltrabold.otf": "/static/media/PPNeueMachina-PlainUltrabold.d0c9688b561e5f9d666b.otf",
+    "static/media/PPNeueMachina-InktrapRegularItalic.otf": "/static/media/PPNeueMachina-InktrapRegularItalic.c440f2017462f4c4f5e6.otf",
+    "static/media/PPNeueMachina-PlainRegularItalic.otf": "/static/media/PPNeueMachina-PlainRegularItalic.07203af3e2c2d4199e35.otf",
+    "static/media/PPNeueMachina-PlainLightItalic.otf": "/static/media/PPNeueMachina-PlainLightItalic.b384013354ba81e1a737.otf",
+    "static/media/PPNeueMachina-InktrapRegular.otf": "/static/media/PPNeueMachina-InktrapRegular.01baa3a95952a01856a3.otf",
+    "static/media/PPNeueMachina-PlainRegular.otf": "/static/media/PPNeueMachina-PlainRegular.c1fe9e8fedaaf2eed971.otf",
+    "static/media/PPNeueMachina-PlainLight.otf": "/static/media/PPNeueMachina-PlainLight.963e24ed86839ab057e0.otf",
     "static/media/kanban2.png": "/static/media/kanban2.0a8440f3c03f0b2e26af.png",
     "static/media/pizzaMockup.png": "/static/media/pizzaMockup.c1878be60f59cd19d112.png",
     "static/media/weatherMockup.png": "/static/media/weatherMockup.e8b75bad864c96ee82cb.png",
@@ -39,11 +49,11 @@
     "index.html": "/index.html",
     "static/media/next.svg": "/static/media/next.21268e531215eff5450a.svg",
     "static/media/prev.svg": "/static/media/prev.fed1c2b36555dd69244c.svg",
-    "main.b020b790.css.map": "/static/css/main.b020b790.css.map",
-    "main.72bdff85.js.map": "/static/js/main.72bdff85.js.map"
+    "main.1b528dfc.css.map": "/static/css/main.1b528dfc.css.map",
+    "main.627aa12d.js.map": "/static/js/main.627aa12d.js.map"
   },
   "entrypoints": [
-    "static/css/main.b020b790.css",
-    "static/js/main.72bdff85.js"
+    "static/css/main.1b528dfc.css",
+    "static/js/main.627aa12d.js"
   ]
 }
